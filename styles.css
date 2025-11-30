@@ -130,7 +130,7 @@ li {
 
 /* angry: */
 
-#angry h2 {
+#angry h2, #offer h2 {
     margin-left: 7vw;
 }
 
@@ -156,8 +156,6 @@ li {
     height: clamp(150px, 20vw, 20vw);
     object-fit: cover;
 }
-
-
 
 /* films: */
 
