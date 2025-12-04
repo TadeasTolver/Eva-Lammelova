@@ -12,12 +12,12 @@ a {
 }
 
 h2 {
-    margin: clamp(70px, 5vw, 5vw) 0 0 0;
+    margin: clamp(70px, 5vw, 5vw) 0 1vw 0;
     font-size: 40px;
 }
 
 h3 {
-    margin: 5vw 0 0 7vw;
+    margin: 5vw 0 1vw 7vw;
     font-size: 35px;
 }
 
@@ -28,14 +28,14 @@ h4 {
 }
 
 p {
-    margin-left: 7vw;
+    margin: 0 0 0 7vw;
     font-size: 25px;
     width: 80vw;
 }
 
 ul {
     font-size: 20px;
-    margin: 0 5vw 0 8vw;
+    margin: 0 5vw 0 6vw;
 }
 
 li {
