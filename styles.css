@@ -3,12 +3,13 @@
 body {
     margin: 0;
     font-family: "Quicksand";
-    background-color: #e3c7ba;
+    background-color: #d0b2a4;
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 h2 {
