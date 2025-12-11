@@ -92,7 +92,7 @@ li {
 }
 
 #name-title {
-    color: #e3c7ba; 
+    color: white; 
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -206,7 +206,6 @@ li {
     #name-title {
         left: 10px;
         bottom: 40vh;
-        color: rgb(255, 255, 255);
     }
 
     #navigation {
@@ -227,3 +226,4 @@ li {
         text-align: right;
     }
 }
+
