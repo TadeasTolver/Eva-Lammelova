@@ -81,11 +81,10 @@ li {
     object-fit: contain;
 }
 
-
 /* index: */
 
 #index {
-    background-image: url("evaainka.jpg");
+    background-image: url("mobily.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -98,7 +97,8 @@ li {
     bottom: 30px;
     margin: 0;
     padding: 10px 20px 10px 20px;
-    font-size: 45px;
+    font-size: 40px;
+    font-weight: 500;
 }   
 
 
@@ -226,4 +226,3 @@ li {
         text-align: right;
     }
 }
-
