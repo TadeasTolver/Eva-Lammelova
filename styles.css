@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: "Quicksand";
-    background-color: #d0b2a4;
+    background-color: #040404;
     color: white;
 }
 
@@ -15,11 +15,13 @@ a {
 h2 {
     margin: clamp(70px, 5vw, 5vw) 0 1vw 0;
     font-size: 40px;
+    font-weight: 500;
 }
 
 h3 {
     margin: 5vw 0 1vw 7vw;
     font-size: 35px;
+    font-weight: 500;
 }
 
 h4 {
@@ -205,7 +207,7 @@ li {
 @media (max-width: 665px) {
     #name-title {
         left: 10px;
-        bottom: 40vh;
+        bottom: 20vh;
     }
 
     #navigation {
@@ -216,7 +218,8 @@ li {
         width: 100vw;
         padding-top: 70px;
         gap: 30px;
-        font-size: 35px;
+        font-size: 25px;
+        font-weight: 500;
         background-color: #e3c7ba;
     }
 
