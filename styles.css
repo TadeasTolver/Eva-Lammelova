@@ -220,7 +220,7 @@ li {
         gap: 30px;
         font-size: 25px;
         font-weight: 500;
-        background-color: #e3c7ba;
+        background-color: #040404;
     }
 
     #navigation a {
@@ -229,3 +229,4 @@ li {
         text-align: right;
     }
 }
+
