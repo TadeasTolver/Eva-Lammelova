@@ -33,6 +33,12 @@ if (document.body.id === "player") {
         document.querySelector("video").innerHTML += '<source src="https://www.dropbox.com/scl/fi/nl14g5iycfoxwhi388p09/arbor-vitae.mp4?rlkey=qx7274x68plqrlfqmpvit77dk&st=6mb2mjhg&raw=1" type="video/mp4"/>';
         document.querySelector("video").poster = "arbor vitae.png";
         document.querySelector("#player-film-title").innerHTML = "Arbor Vitae";
+    } else if (film === "asexualove") {
+        document.querySelector("video").innerHTML += '<source src="https://drive.google.com/file/d/1Ngd7kD1NyGHF1fLFDz9azfvZz2OGKbOQ/preview';
+        document.querySelector("video").poster = "asexualove.webp";
+        document.querySelector("#player-film-title").innerHTML = "AsexuaLOVE";
+        document.querySelector("#player-film-link").href = "https://dafilms.cz/film/10486-asexualove"
+        document.querySelector("#player-film-link").innerHTML = "K vzhlédnutí také na dafilms.cz"
     } else {
         window.location.href = "https://lammelova.com/films"
     }
