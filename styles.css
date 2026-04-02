@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    height: 100%;
+    height: 100vh !important;
     font-family: "Quicksand";
     background-color: #040404;
     color: white;
