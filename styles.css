@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    height: 100vh !important;
+    padding: 0;
+    height: 100%;
     font-family: "Quicksand";
     background-color: #040404;
     color: white;
@@ -90,7 +91,7 @@ li {
     background-image: url("mobily.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 #name-title {
