@@ -15,7 +15,7 @@ window.openMenu = () => {
 
 if (document.body.id === "index") {
     if (visualViewport.width < 665) {
-        document.body.style.backgroundImage = 'url("mobily nastojato.jpg")';
+        document.body.style.backgroundImage = 'url("fotky/mobily nastojato.jpg")';
     } else {
         menuBar.style.display = "flex";
     }
