@@ -1,14 +1,13 @@
-const menuBar = document.querySelector("#navigation");
-
 window.openMenu = () => {
-    if (menuBar.style.display === "none") {
-        menuBar.style.display = "flex";
+    if (document.querySelector("#navigation").style.display === "none") {
+        document.querySelector("#navigation").style.display = "flex";
+        console.log(document.querySelector("#navigation").style.display)
 
         if (visualViewport.width < 665) {
             document.body.style.overflowY = "hidden";
         }
     } else {
-        menuBar.style.display = "none";
+        document.querySelector("#navigation").style.display = "none";
         document.body.style.overflowY = "initial";
     }
 }
@@ -17,7 +16,7 @@ if (document.body.id === "index") {
     if (visualViewport.width < 665) {
         document.body.style.backgroundImage = 'url("fotky/mobily nastojato.jpg")';
     } else {
-        menuBar.style.display = "flex";
+        document.querySelector("#navigation").style.display = "flex";
     }
 } 
 
@@ -43,3 +42,24 @@ if (document.body.id === "player") {
         window.location.href = "https://lammelova.com/films"
     }
 }
+
+const changeToEn = () => {
+    console.log("change to english")
+
+    localStorage.setItem(`${document.body.id}CzOg`, document.body.innerHTML);
+    localStorage.setItem("lang", "en");
+
+    fetch(`${document.body.id}ENGLISH.html`)
+        .then(response => response.text())
+        .then(html => {document.body.innerHTML = html;}
+    );
+}
+
+const changeToCz = () => {
+    document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
+    localStorage.setItem("lang", "cz");
+}
+
+if (localStorage.getItem("lang") === "en" && document.body.id === "aboutme") { // remove that && later...!
+    changeToEn();
+};
