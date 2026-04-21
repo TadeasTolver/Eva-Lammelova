@@ -16,7 +16,7 @@ if (document.body.id === "index") {
     if (visualViewport.width < 665) {
         document.body.style.backgroundImage = 'url("fotky/mobily nastojato.jpg")';
     } else {
-        document.querySelector("#navigation").style.display = "flex";
+        //document.querySelector("#navigation").style.display = "flex";
     }
 } 
 
@@ -43,6 +43,7 @@ if (document.body.id === "player") {
     }
 }
 
+
 const changeToEn = () => {
     console.log("change to english")
 
@@ -53,6 +54,8 @@ const changeToEn = () => {
         .then(response => response.text())
         .then(html => {document.body.innerHTML = html;}
     );
+
+
 }
 
 const changeToCz = () => {
@@ -60,6 +63,6 @@ const changeToCz = () => {
     localStorage.setItem("lang", "cz");
 }
 
-if (localStorage.getItem("lang") === "en" && document.body.id === "aboutme") { // remove that && later...!
+if (localStorage.getItem("lang") === "en") {
     changeToEn();
 };
