@@ -104,7 +104,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    height: 100dvh;
+    height: 120dvh; /* EXPERIMENT WITH EXTRA HEIGHT  -----------------------------------------------------------------   */
 }
 
 #name-title {
