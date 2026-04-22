@@ -12,13 +12,14 @@ window.openMenu = () => {
     }
 }
 
-if (document.body.id === "index") {
-    if (visualViewport.width < 665) {
+
+if (visualViewport.width < 665) {
+    if (document.body.id === "index") {
         document.body.style.backgroundImage = 'url("fotky/mobily nastojato.jpg")';
-    } else {
-        //document.querySelector("#navigation").style.display = "flex";
     }
-} 
+} else {
+    document.querySelector("#navigation").style.display = "flex";
+}
 
 if (document.body.id === "player") {
     const film = new URL(window.location.href).searchParams.get("film");
@@ -61,6 +62,7 @@ const changeToEn = () => {
 const changeToCz = () => {
     document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
     localStorage.setItem("lang", "cz");
+    document.querySelector("#navigation").style.display = "flex";
 }
 
 if (localStorage.getItem("lang") === "en") {
