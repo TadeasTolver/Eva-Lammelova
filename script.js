@@ -56,15 +56,19 @@ const changeToEn = () => {
         .then(html => {document.body.innerHTML = html;}
     );
 
-
+    if (visualViewport.width < 665) {
+      document.querySelector("#navigation").style.display = "none";
+    }
 }
 
 const changeToCz = () => {
     document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
     localStorage.setItem("lang", "cz");
-    document.querySelector("#navigation").style.display = "flex";
+    if (visualViewport.width > 665) {
+      document.querySelector("#navigation").style.display = "flex";
+    }
 }
 
 if (localStorage.getItem("lang") === "en") {
-    changeToEn();
+    changeToEn();    
 };
