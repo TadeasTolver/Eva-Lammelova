@@ -104,7 +104,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    height: 120dvh; /* EXPERIMENT WITH EXTRA HEIGHT  -----------------------------------------------------------------   */
+    height: 100dvh; /* EXPERIMENT WITH EXTRA HEIGHT  -----------------------------------------------------------------   */
 }
 
 #name-title {
@@ -237,6 +237,9 @@ li {
 /* phone */
 
 @media (max-width: 665px) {
+    #index {
+        height: 110vh;
+    }
 
     #name-title {
         left: 10px;
