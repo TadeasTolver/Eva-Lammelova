@@ -12,13 +12,18 @@ window.openMenu = () => {
     }
 }
 
+const hideNavOnMobile = () => {
+    if (visualViewport.width < 665) {
+        document.querySelector("#navigation").style.display = "none";
+        document.body.style.overflowY = "initial";
+    }
+}
+
 
 if (visualViewport.width < 665) {
     if (document.body.id === "index") {
         document.body.style.backgroundImage = 'url("fotky/mobily nastojato.jpg")';
     }
-} else {
-    document.querySelector("#navigation").style.display = "flex";
 }
 
 if (document.body.id === "player") {
@@ -53,22 +58,21 @@ const changeToEn = () => {
 
     fetch(`${document.body.id}ENGLISH.html`)
         .then(response => response.text())
-        .then(html => {document.body.innerHTML = html;}
-    );
-
-    if (visualViewport.width < 665) {
-      document.querySelector("#navigation").style.display = "none";
-    }
+        .then(html => {document.body.innerHTML = html 
+        hideNavOnMobile();
+        }
+    )
 }
 
 const changeToCz = () => {
     document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
     localStorage.setItem("lang", "cz");
-    if (visualViewport.width > 665) {
-      document.querySelector("#navigation").style.display = "flex";
-    }
+    hideNavOnMobile();
+
 }
 
 if (localStorage.getItem("lang") === "en") {
-    changeToEn();    
+    changeToEn(); 
 };
+
+hideNavOnMobile();
