@@ -3,7 +3,7 @@ window.openMenu = () => {
         document.querySelector("#navigation").style.display = "flex";
         console.log(document.querySelector("#navigation").style.display);
 
-        if (document.body.id != "index") {
+        if (document.body.id != "index" && visualViewport.width < 665) {
             document.body.style.position = "fixed";
         }
 
