@@ -1,19 +1,21 @@
 window.openMenu = () => {
     if (document.querySelector("#navigation").style.display === "none") {
         document.querySelector("#navigation").style.display = "flex";
-        console.log(document.querySelector("#navigation").style.display)
+        console.log(document.querySelector("#navigation").style.display);
+
+        if (document.body.id != "index") {
+            document.body.style.position = "fixed";
+        }
 
     } else {
         document.querySelector("#navigation").style.display = "none";
+        document.body.style.position = "static";
     }
 }
 
 const hideNavOnMobile = () => {
     if (visualViewport.width < 665) {
         document.querySelector("#navigation").style.display = "none";
-        document.body.style.position = "";
-        document.body.style.top = "";
-        window.scrollTo(0, scrollY);
     }
 }
 
