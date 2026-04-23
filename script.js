@@ -3,17 +3,8 @@ window.openMenu = () => {
         document.querySelector("#navigation").style.display = "flex";
         console.log(document.querySelector("#navigation").style.display)
 
-        if (visualViewport.width < 665) {
-            scrollY = window.scrollY;
-            document.body.style.position = "fixed";
-            document.body.style.top = `-${scrollY}px`;
-        }
-
     } else {
         document.querySelector("#navigation").style.display = "none";
-        document.body.style.position = "";
-        document.body.style.top = "";
-        window.scrollTo(0, scrollY);
     }
 }
 
