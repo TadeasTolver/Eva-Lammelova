@@ -104,7 +104,7 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    height: 100dvh; /* EXPERIMENT WITH EXTRA HEIGHT  -----------------------------------------------------------------   */
+    height: 100dvh;
 }
 
 #name-title {
@@ -237,9 +237,6 @@ li {
 /* phone */
 
 @media (max-width: 665px) {
-    #index {
-        height: 110vh;
-    }
 
     #name-title {
         left: 10px;
@@ -257,6 +254,11 @@ li {
         font-size: 25px;
         font-weight: 500;
         background-color: #040404;
+        position: fixed;
+    }
+
+    #navigation-btn {
+        position: fixed;
     }
 
     #navigation a {
