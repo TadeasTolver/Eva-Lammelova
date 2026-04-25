@@ -51,7 +51,6 @@ if (document.body.id === "player") {
 
 
 const changeToEn = () => {
-    console.log("change to english")
 
     localStorage.setItem(`${document.body.id}CzOg`, document.body.innerHTML);
     localStorage.setItem("lang", "en");
@@ -61,10 +60,12 @@ const changeToEn = () => {
         .then(html => {document.body.innerHTML = html 
         hideNavOnMobile();
         }
-    )
+    );
 }
 
 const changeToCz = () => {
+
+    console.log("czech")
     document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
     localStorage.setItem("lang", "cz");
     hideNavOnMobile();
