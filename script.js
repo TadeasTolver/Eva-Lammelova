@@ -43,11 +43,8 @@ if (document.body.id === "player") {
         <a id="player-film-link" href="https://dafilms.cz/film/10486-asexualove">K vzhlédnutí také na dafilms.cz</a>
         `
     } else if (film === "v-atelieru") {
-        document.body.innerHTML =  `
-        <iframe src="https://drive.google.com/file/d/1zXKOOvmL_py-6tczrGawPIUeLBQ9EB-P/preview" width="640" height="400" allow="autoplay"></iframe>
-        <br><br>
-        <h4 id="player-film-title">V ateliéru</h4>
-        `
+        document.querySelector("video").innerHTML += '<source src="https://pub-1726f15402af4e268e3702d6c499f570.r2.dev/v%20atelieru.mp4" type="video/mp4"/>';
+        document.querySelector("#player-film-title").innerHTML = "V ateliéru";
     }
     else {
         window.location.href = "https://lammelova.com/films";
