@@ -1,21 +1,18 @@
+const hideNav = () => {
+    document.querySelector("#navigation").style.display = "none";
+    document.body.style.position = "static";
+}
+
 window.openMenu = () => {
     if (document.querySelector("#navigation").style.display === "none") {
         document.querySelector("#navigation").style.display = "flex";
-        console.log(document.querySelector("#navigation").style.display);
 
         if (document.body.id != "index" && visualViewport.width < 665) {
-            document.body.style.position = "fixed";
+            document.body.style.position = "fixed"; // !
         }
 
     } else {
-        document.querySelector("#navigation").style.display = "none";
-        document.body.style.position = "static";
-    }
-}
-
-const hideNavOnMobile = () => {
-    if (visualViewport.width < 665) {
-        document.querySelector("#navigation").style.display = "none";
+        hideNav();
     }
 }
 
@@ -66,22 +63,20 @@ const changeToEn = () => {
     fetch(`${document.body.id}ENGLISH.html`)
         .then(response => response.text())
         .then(html => {document.body.innerHTML = html 
-        hideNavOnMobile();
+        hideNav();
         }
     );
 }
 
 const changeToCz = () => {
 
-    console.log("czech")
     document.body.innerHTML = localStorage.getItem(`${document.body.id}CzOg`);
     localStorage.setItem("lang", "cz");
-    hideNavOnMobile();
-
+    hideNav();
 }
 
 if (localStorage.getItem("lang") === "en") {
     changeToEn(); 
 };
 
-hideNavOnMobile();
+hideNav();
