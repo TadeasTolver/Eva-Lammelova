@@ -26,13 +26,13 @@ if (visualViewport.width < 665) {
 if (document.body.id === "player") {
     const film = new URL(window.location.href).searchParams.get("film");
     if (film === "anomalie") {
-        document.querySelector("video").innerHTML += '<source src="https://www.dropbox.com/scl/fi/lm2svd8myhz9oat9rgm1n/anomalie-film.mp4?rlkey=a5ccci2umrkfo9mc8ffrazuzz&st=o9yhl8jo&raw=1" type="video/mp4"/>';
+        document.querySelector("video").innerHTML += '<source src="https://pub-1726f15402af4e268e3702d6c499f570.r2.dev/anomalie-film.mp4"/>';
         document.querySelector("video").poster = "anomalie.webp";
         document.querySelector("#player-film-title").innerHTML = "Anomálie";
         document.querySelector("#player-film-link").href = "https://dafilms.cz/film/10696-anomalie";
         document.querySelector("#player-film-link").innerHTML = "K vzhlédnutí také na dafilms.cz";
     } else if (film === "arbor-vitae") {
-        document.querySelector("video").innerHTML += '<source src="https://www.dropbox.com/scl/fi/nl14g5iycfoxwhi388p09/arbor-vitae.mp4?rlkey=qx7274x68plqrlfqmpvit77dk&st=6mb2mjhg&raw=1" type="video/mp4"/>';
+        document.querySelector("video").innerHTML += '<source src="https://pub-1726f15402af4e268e3702d6c499f570.r2.dev/arbor-vitae.mp4" type="video/mp4"/>';
         document.querySelector("video").poster = "arbor vitae.png";
         document.querySelector("#player-film-title").innerHTML = "Arbor Vitae";
     } else if (film === "asexualove") {
