@@ -234,6 +234,10 @@ li {
     text-decoration: underline;
 }
 
+#ceskazena-movie {
+    margin-left: 7vw;
+}
+
 /* phone */
 
 @media (max-width: 665px) {
