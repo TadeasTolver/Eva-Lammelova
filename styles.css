@@ -236,15 +236,21 @@ li {
 
 #ceskazena-movie {
     margin-left: 7vw;
+    width: 355px;
+    height: 200px;
 }
 
 /* phone */
 
 @media (max-width: 665px) {
-
     video {
         width: 80vw;
         height: 60vw;
+    }
+
+    #ceskazena-movie {
+        width: 142vw;
+        height: 80vw;
     }
 
     #name-title {
